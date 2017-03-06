@@ -10,9 +10,9 @@ try {
 
     $stmt = $conn->prepare("UPDATE messages SET inhoud='Testberichtje' WHERE id=4");
 
-    // zorg dat de database ge-update wordt
+    // zorg dat de database ge-update wordt  
     // en getoond wordt hoeveel rijen aangepast zijn
-    
+    $stmt ->execute();
     echo $aantal_aangepast . " rijen aangepast...";
 }
 catch(PDOException $e)

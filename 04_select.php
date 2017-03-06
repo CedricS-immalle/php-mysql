@@ -21,6 +21,12 @@ try {
         echo "<tr>";
         // VUL AAN zodat alle inhouden en tijdstippen worden getoond
         echo "</tr>";
+          echo "<td>";
+        echo $row["inhoud"];
+        echo "</td>"; echo "<td>";      
+        echo $row["tijdstip"];
+        echo "</td>";    echo "</tr>";
+    
     }
 
     echo "</table>"; 

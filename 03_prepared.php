@@ -12,7 +12,16 @@ try {
 
     // vervolledig de code om 3 testberichten toe te voegen
     // m.b.v. bovenstaand prepared statement
+    $stmt->bindParam(":inhoud", $inhoud);
 
+    $inhoud = "Test01";
+    $stmt ->execute();
+      
+    $inhoud = "Test02";
+    $stmt ->execute();  
+    
+    $inhoud = "Test03";
+    $stmt ->execute();
 
     echo "3 testberichten toegevoegd...";
 }
